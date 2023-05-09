@@ -2,32 +2,34 @@
 Pay3 is a smart contract based subscription payment system. User can start and stop the subscription easily. Service provider can use this system to collect and withdraw service fees.
 
 ## Project Description
-Pay3 is a smart contract based payment system. Service provider can start subscription after deploying this contract.
+Pay3 is a smart contract based payment system. There are two panels to this DApp, one for the users and the other for the `Admin`. Users can create virtual wallets from their interface, allocate some amount to the wallet and withdraw it whenever they want after paying the subscription fee of `0.01ETH`. The service providers can start subscription and collect the subscription fee after deploying this contract.
 
 - Users can be charged with prepaid way to NFT as their own virtual wallet and quickly stop/start subscription.
-
-They can also withdraw their amount at any time but the service fee of `0.01ETH` will be deducted and collected by the owner's account.
+- They can also withdraw their amount at any time but the service fee of `0.01ETH` will be deducted and collected by the owner's account.
 
 ### User experience
 
 Steps to create a virtual wallet:
-
-- Create
-
-- Pushing Charge button after allocating a ceration amount of `ETH`(for example:over 0.01ETH)
-
-- Pushing On button
+- To create a virtual wallet, the user needs to first allocate a certain amount of `Ethereum (ETH)` to the wallet. This can be done by pushing the `Charge` button and entering the desired amount of `ETH` to be allocated. It is important to note that the amount allocated must be over `0.01 ETH`.
+- Once the desired amount of `ETH` has been allocated, the user can push the `On` button to activate the wallet and start using it to store and withdraw their allocated amount.
 
 Steps to withdraw allocated amount:
-- Pushing Off button
-- Pushing Withdraw
+- To withdraw the allocated amount, the user needs to first push the `Off` button to deactivate the wallet. 
+- Then, they can push the `Withdraw` button to initiate the withdrawal process.
+- The allocated amount would be re-imbursed to the user's metamask wallet.
+
+Steps to collect the Subscription fee (by `Admin`):
+- The `Admin` would have to switch to the wallet that was used to deploy the contracts in order to collect the subscription fee.
+- To collect the subsctiption fee, push the `Collect` button and then press the `Withdraw` button to transfer the collected amount to the Admin's metamask wallet.
 
 
 ## Conclusion
 
-The Single Contract configuration allows for customization, and a subscription system can be prepared for each service, making it possible to tailor operations to the characteristics of the service.
+The subscription system allows users to subscribe to the service and pay for it on a regular basis. This makes it convenient for users to use the service without having to worry about renewing their subscription manually.
 
-we hope to promote the use of this infrastructure and reduce the number of subscription services with cumbersome cancellation procedures.
+This DApp aims to reduce the number of subscription services with cumbersome cancellation procedures. This means that users can cancel their subscription easily without going through complex processes, making it easier to switch between services or cancel services that are no longer required.
+
+Overall, this DApp is designed to provide users with greater flexibility and customization in the services they use, while also making it easier to manage their subscriptions. This can help businesses to attract and retain customers by providing a more personalized and convenient service, ultimately leading to increased customer satisfaction and loyalty.
 
 ## How it's Made
 
